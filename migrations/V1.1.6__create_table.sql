@@ -1,3 +1,5 @@
+use schema ADMIN;
+
 CREATE TABLE ADMIN
 (
    FIRST_NAME VARCHAR
