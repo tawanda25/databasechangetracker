@@ -1,4 +1,4 @@
-use schema admin;
+use schema EXTRACTS;
 
 create table extracts(
    FIRST_NAME VARCHAR
