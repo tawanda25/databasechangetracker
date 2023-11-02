@@ -1,8 +1,1 @@
-USE SCHEMA DEMO;
-CREATE TABLE USERS
-(
-   FIRST_NAME VARCHAR
-  ,LAST_NAME VARCHAR
-);
-
-create SCHEMA ADMIN;
+create schema agent;
