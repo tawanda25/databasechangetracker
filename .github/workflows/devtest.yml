@@ -4,7 +4,7 @@ name: snowflake-devops-test
 on:
   push:
     branches:
-      - devTawanda
+      - DevTest
     paths:
       - 'migrations/**'
 
@@ -27,11 +27,11 @@ jobs:
 
       - name: Run schemachange
         env:
-          SF_ACCOUNT: ${{ secrets.SF_ACCOUNT_N }}
+          SF_ACCOUNT: ${{ secrets.SF_ACCOUNT_T }}
           SF_USERNAME: ${{ secrets.SF_USERNAME_N }}
-          SF_ROLE: ${{ secrets.SF_ROLE }}
-          SF_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
-          SF_DATABASE: ${{ secrets.SF_DATABASE }}
+          SF_ROLE: ${{ secrets.SF_ROLE_T }}
+          SF_WAREHOUSE: ${{ secrets.SF_WAREHOUSE_T }}
+          SF_DATABASE: ${{ secrets.SF_DATABASE_T }}
           SNOWFLAKE_PASSWORD: ${{ secrets.SF_PASSWORD_N }}
         run: |
           echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
